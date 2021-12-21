@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url(./bg_icons.png);
+  
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+.main-heading{
+  width: 35%;
+  height: 12%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+h1{
+  color: #44D4E8;
+}
+
+h1 span{
+  color: #EDE751;
+  margin: 0 0 0 15px;
+}
+
+h2 {
+  margin: 0px 0 22px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #9D4EDD;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 700px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+
+.inner_container {
+  margin: 0 20px 20px 20px;
+}
+
+.result-container {
+  background-color: #E9ECEF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  margin: 0 0 15px 0;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#result::-webkit-scrollbar {
+  width: 1rem;
+}
+
+#clipboard{
+  background-color: #5A189A;
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #FFC300;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn_cont {
+  overflow: hidden;
+  width: 100%;
+  background-color: #FFC300;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 400px;
+  }
+
+  .btn {
+    padding: 14px 0;
+  }
+}
+
+
+.icons-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin:15px 0 10px 0;
+  align-items: center;
+}
+
+.icons-container img{
+  height: 60px;
+  
+}
